@@ -18,6 +18,8 @@ $(".popup-with-move-anim").magnificPopup({
 $("a[href=callback]").click(function() {
 	$("#callback .formname").val($(this).data("form"));
 });
+
+
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {

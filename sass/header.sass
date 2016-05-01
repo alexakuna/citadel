@@ -13,7 +13,7 @@ body
 		height: 120px
 		background-color: #e8e6d8
 	.logo
-		background: url(/img/logo.png) no-repeat 50% 50%
+		background: url(/img/logo.png) no-repeat 0 50%
 		height: 120px
 	.coll_us
 		font-family: "Open-Sans", Arial, sans-serif
@@ -35,6 +35,7 @@ body
 		display: inline-block
 		margin-left: 10px
 	.requst-a-coll-p1
+		text-align: right
 		position: relative
 		top: 38px
 		color: $color-notify
@@ -45,10 +46,13 @@ body
 			border-radius: 50%
 			display: inline-block
 			margin-left: 10px
-		.btn-head
+		a
 			vertical-align: middle
 			text-align: center
 			display: inline-block
+			text-decoration: none
+			color: $cr-nfy-p2
+			outline: none
 			font-family: "Open-Sans", Arial, sans-serif
 			font-size: 0.9em bold
 			text-transform: uppercase
@@ -58,7 +62,7 @@ body
 			cursor: pointer
 			background: transparent
 			border-radius: 10px
-			border: 1px dotted $color-notify
+			border: 1px solid $color-notify
 			margin-left: 10px
 			box-shadow: 0 3px 1px $color-notify
 			transition: .3s
@@ -110,6 +114,26 @@ body
 				font-size: .97em
 				color: #999
 
+	.main-header
+		background: url(/img/main_head_bg2.jpg) no-repeat 50% 50%
+		h1
+			color: $cr-nfy-p2
+			text-transform: uppercase
+			font-size: 3em
+			letter-spacing: 5px
+			margin-bottom: 0
+		p
+			font-size: 1.8em
+			color: lighten($cr-nfy-p2, 10%)
+			display: block
+			margin: 0
+		.front-photo
+			background: url(/img/hous_bg_header.png)	no-repeat 50% 50%
+			background-size: contain
+			min-height: 600px
+
+
+ 
 
 			
 
