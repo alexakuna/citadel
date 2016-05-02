@@ -57,7 +57,7 @@ gulp.task('watch', function () {
 	gulp.watch('app/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('build', ['clean', 'styles', 'scripts'], function() {
+gulp.task('build', ['clean', 'styles', 'scripts',], function() {
    var buildCss = gulp.src([
    	'app/css/main.min.css',
    'app/css/libs.min.css',

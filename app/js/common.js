@@ -1,5 +1,16 @@
 $(function() {
 
+	$('.main-header-photo').addClass('animated rubberBand');
+	$('h1').addClass('animated fadeInLeft');
+	$('.anime').addClass('animated fadeInLeft');
+
+
+	$('.anime-second').addClass('animated fadeInRight');
+
+
+	
+
+
 $(".popup-with-move-anim").magnificPopup({
 		type: 'inline',
 
@@ -36,11 +47,13 @@ $("a[href=callback]").click(function() {
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			$(".success").css("visibility", "visible");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
-			}, 1000);
+				$(".success").css("visibility", "hidden");
+				$.magnificPopup.close();
+			}, 2000);
 		});
 		return false;
 	});
