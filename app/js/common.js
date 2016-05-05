@@ -3,13 +3,10 @@ $(function() {
 	$('.main-header-photo').addClass('animated rubberBand');
 	$('h1').addClass('animated fadeInLeft');
 	$('.anime').addClass('animated fadeInLeft');
-
-
 	$('.anime-second').addClass('animated fadeInRight');
+	$(".block").animated("zoomInUp")
 
-
-	
-
+	$('.product').addClass('.prodeye');
 
 $(".popup-with-move-anim").magnificPopup({
 		type: 'inline',
@@ -57,6 +54,7 @@ $("a[href=callback]").click(function() {
 		});
 		return false;
 	});
+
 
 	//Chrome Smooth Scroll
 	try {
