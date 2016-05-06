@@ -6,8 +6,14 @@ $(function() {
 	$('.anime-second').addClass('animated fadeInRight');
 	$(".block").animated("zoomInUp")
 
-	$('.product').addClass('.prodeye');
-
+	/*$('.product').hover(function() {
+		$('.proeye').addClass('fadeOut',400);
+			
+		});
+	}, function() {
+		$('.proeye').addClass('fadeIn',400);
+	});
+*/
 $(".popup-with-move-anim").magnificPopup({
 		type: 'inline',
 
