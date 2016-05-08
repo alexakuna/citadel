@@ -201,6 +201,7 @@ h1, h2, h3, h4
 		position: relative
 		h2
 			font-size: 2.4em
+			display: inline-block
 		&::before
 			content: ''
 			position: absolute
@@ -217,36 +218,103 @@ h1, h2, h3, h4
 			.block-trust
 				padding: 0 50px
 				text-align: center
-		.btn-trust
-			color: #fff
+		
+		.wrrap-bth-trus
 			text-align: center
-			display: inline-block
-			text-decoration: none
-			outline: none
-			font-family: "Open-Sans", Arial, sans-serif
-			font-size: 0.9em bold
-			text-transform: uppercase
-			line-height: 54px
-			width: 400px
-			height: 55px
+			a
+				color: #fff
+				vertical-align: middle
+				text-align: center
+				display: inline-block
+				text-decoration: none
+				outline: none
+				font-family: "Open-Sans", Arial, sans-serif
+				font-size: 0.9em bold
+				text-transform: uppercase
+				line-height: 54px
+				width: 400px
+				height: 55px
+				background: $cr-nfy-p2
+				border-radius: 5px
+				border: 1px solid #fff
+				margin: 100px 0
+				box-shadow: 0 3px 1px $color-notify
+				position: relative
+				z-index: 20
+				transition: .3s
+				&:hover
+					color: $accent-color
+					border: 1px solid $accent-color
+
+.how-to-find-us
+	text-align: center
+	font-size: 2.2em
+	.wrrap
+		position: relative
+		&::before
+			content: ''
 			background: $cr-nfy-p2
-			border-radius: 5px
-			border: 1px solid #fff
-			margin: 100px 0
-			box-shadow: 0 3px 1px $color-notify
-			position: relative
-			left: -200px
-			transition: .3s
-			&:hover
-				color: lighten($accent-color, 20%)
-				border: 1px solid $accent-color
-	
+			opacity: .5
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			left: 0
+			z-index: 2
+		.bg-how-to-find-us
+			position: absolute
+			background: url(/img/map.jpg) no-repeat
+			background-size: cover
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+		.block-content
+			h2
+				color: #fff
+				position: relative
+				z-index: 11
+				display: inline-block
+				&::before
+					content: ''
+					position: absolute
+					top: 90px
+					left: 0
+					right: 0
+					bottom: 0
+					height: 2px
+					width: 100%
+					background: #fff
+			img
+				z-index: 10	
 
+footer
+	background-color: #141e1f
+	text-align: center
+	color: #fff
+	.social
+		ul
+		text-align: center !important
+		img
+			margin-top: 20px
+		li
+			display: inline-block
+			font-size: 32px
+			margin-right: 10px
+	.contact-block
+		border-left: 2px solid #fff
+		color: #fff
+		text-align: left
+		margin-top: 20px
+		h3
+			color: #fff
+		ul
 
-
-			
-
-
+			padding: 0 0 0 5px
+			li
+				list-style-type: none
+				a
+					color: #fff
 
 
 
