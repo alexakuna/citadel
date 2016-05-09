@@ -36,24 +36,25 @@
 	<!-- Load CSS Compiled without JS -->
 	<noscript>
 		<link rel="stylesheet" href="css/fonts.min.css">
-		<link rel="stylesheet" href="css/main.min.css"></noscript>
+		<link rel="stylesheet" href="css/main.min.css">
+		</noscript>
 
 </head>
-
 <body>
 	<!--Wrapper-head section-->
 	<div class="wrapp-head">
+		<a name="wrapp-head"></a>
 		<div class="container">
 			<div class="row">
-				<div class="logo col-md-3"></div>
-				<div class="coll_us col-md-4">
+				<div class="logo col-md-3 col-sm-3"><img src="img/Logo.png" alt="Цитадель, фасадные термопанели"></div>
+				<div class="coll_us col-md-3 col-sm-4 col-sm-offset-1">
 					Звоните нам
 					<span></span>
 					<div class="phone-num">8 (097) 20 59 003</div>
 				</div>
-				<div class="requst-a-coll-p1 col-md-5">
-					Мы перезвоним вам
-					<span></span>
+				<div class="requst-a-coll-p1 col-sm-3 col-md-5">
+					<div class="coll-media">Мы перезвоним вам</div>
+					<span class="circle"></span>
 					<a href="#callback" class="popup-with-move-anim">Заказать звонок</a>
 				</div>
 			</div>
@@ -71,12 +72,14 @@
 						<span>нами</span>
 						ваше тепло останется в доме
 					</p>
-					<div class="main-header-photo col-md-7 col-sm-5 col-xs-4"></div>
+					<div class="main-header-photo col-md-7 col-sm-7">
+						<img style="max-width: 100%" src="img/hous_bg_header.png" alt="Утепление стен термопанелями">
+					</div>
 				</div>
 			</div>
 			<div class="bg-termopanel">
 				<div class="container">
-					<div class="col-md-4 col-md-offset-8 anime-second">
+					<div class="col-md-4 col-md-offset-8 col-sm-offset-8 anime-second">
 						Фасадные термопанели с клинкерной плиткой. Лучшее решение для дома.
 					</div>
 				</div>
@@ -93,6 +96,7 @@
 
 	<!--Section two, "Why thermopanel?"-->
 	<section class="why-thermopanel">
+	<a name="why-thermopanel"></a>
 		<div class="container">
 			<div class="row">
 				<div class="wrrap-h1 col-md-8 col-md-offset-2">
@@ -119,7 +123,7 @@
 					Установка облицовочных панелей происходит очень быстро за счет готовых секций.
 				</div>
 				<div class="block col-md-4">
-					<img src="img/foto_sec_1.png" alt="Приемущества термопанелей"></div>
+					<img class="photo-termopanel-why" style="max-width: 100%" src="img/foto_sec_1.png" alt="Приемущества термопанелей"></div>
 				<div class="block col-md-4">
 					<h3>Монтаж в любую погоду</h3>
 					Термопанели обладают исключительной стойкостью к погодным условиям.
@@ -149,6 +153,7 @@
 	</section>
 	<!--Section Products-->
 	<section class="products">
+	<a name="products"></a>
 		<div class="wrraper">
 
 			<div class="bg-products" style="background-image: url(img/bg_product.png)"></div>
@@ -208,6 +213,7 @@
 	</section>
 <!--Section "We can trust"-->
 <section class="we-can-trust">
+<a name="we-can-trust"></a>
 	<div class="wrrap-trust">
 		<div class="bg-trust"></div>
 		<div class="container">
@@ -251,6 +257,9 @@
 					<div class="block-content">
 						<h2>Как нас найти?</h2>
 						<img src="img/tablet-map.png" alt="Как нас найти?" class="col-md-12">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2676.1748394915217!2d35.07390641585662!3d47.87494207739492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dc66a15a2756cd%3A0x92485910600dd776!2z0JPRgNC10LHQtdC70YzQvdCwINCy0YPQuy4sIDUsINCX0LDQv9C-0YDRltC20LbRjywg0JfQsNC_0L7RgNGW0LfRjNC60LAg0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sru!4v1462793585636" width="564" height="422" frameborder="0" style="border:0" allowfullscreen>
+							
+						</iframe>
 					</div>
 				</div>
 			</div>
@@ -261,16 +270,16 @@
 	<div class="container">
 		<div class="row">
 			<div class="contact-block col-md-4">
-				<h3>Заголовок</h3>
+				<h3>Навигация</h3>
 				<ul>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
+					<li><a href="#wrapp-head">Главная</a></li>
+					<li><a href="#why-thermopanel">Почему термопанели?</a></li>
+					<li><a href="#products">Продукция</a></li>
+					<li><a href="#we-can-trust">Нам можно доверять</a></li>
+					<li><a href="#">Как мы работаем</a></li>
 				</ul>
 			</div>
-			<div class="contact-block social col-md-4">
+			<div class="contact-block social col-md-4" style="text-align: center;">
 				<img src="img/logo_footer.png" alt="Логотип">
 				<ul>
 					<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
@@ -279,14 +288,21 @@
 					<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
 				</ul>
 			</div>
-			<div class="contact-block col-md-4">
-				<h3>Заголовок</h3>
+			<div class="contact-block contacts col-md-4">
+				<h3>Контакты</h3>
 				<ul>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
-					<li><a href="#">Пункты</a></li>
+					<li>
+						Адрес:
+						Запорожье ул. Плотинная 5, офис 569096<br>
+						Тел:<br>
+						8 (050) 486-08-26<br>
+						8 (097) 205-90-03<br>
+						8 (097) 205-90-03<br>
+						Факс:<br>
+						80 (612) 79-02-01<br>
+						E-mail: citadel@gmail.com<br>
+					</li>
+
 				</ul>
 			</div>
 			<p>© 2006-2016 компания "Цитадель"</p>

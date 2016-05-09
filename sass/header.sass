@@ -13,14 +13,16 @@ body
 		height: 120px
 		background-color: #e8e6d8
 	.logo
-		background: url(/img/logo.png) no-repeat 0 50%
-		height: 120px
+		display: flex
+		align-items: center
+		margin-top: 20px
 	.coll_us
 		font-family: "Open-Sans", Arial, sans-serif
 		font-size: 1em
 		color: $color-notify
 		display: inline-block
 		line-height: 120px
+		text-align: center
 		span
 			width: 10px
 			height: 10px
@@ -39,6 +41,9 @@ body
 		position: relative
 		top: 38px
 		color: $color-notify
+		float: right
+		.coll-media
+			display: inline-block
 		span
 			width: 10px
 			height: 10px
@@ -47,7 +52,6 @@ body
 			display: inline-block
 			margin-left: 10px
 		a
-			vertical-align: middle
 			text-align: center
 			display: inline-block
 			text-decoration: none
@@ -136,11 +140,8 @@ body
 		span
 			color: $accent-color
 		.main-header-photo
-			background: url(/img/hous_bg_header.png) no-repeat
-			background-size: contain
-			height: 511px
-			z-index: 10
-			position: relative
+			z-index: 1
+			margin-bottom: 30px
 		.bg-termopanel
 			width: 100%
 			background: #e8e6d8

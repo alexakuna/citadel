@@ -287,20 +287,28 @@ h1, h2, h3, h4
 					background: #fff
 			img
 				z-index: 10	
-
+			iframe
+				position: absolute
+				z-index: 11
+				bottom: 47px
+				left: 664px
 footer
 	background-color: #141e1f
 	text-align: center
 	color: #fff
 	.social
 		ul
-		text-align: center !important
+			text-align: center
+			li
+				display: inline-block
+				font-size: 32px
+				margin-right: 10px
+				
+				a:hover
+					color: darken(#fff, 20%)
 		img
 			margin-top: 20px
-		li
 			display: inline-block
-			font-size: 32px
-			margin-right: 10px
 	.contact-block
 		border-left: 2px solid #fff
 		color: #fff
@@ -315,7 +323,9 @@ footer
 				list-style-type: none
 				a
 					color: #fff
-
+	.contacts
+		li
+			font-size: 12px	
 
 
 
