@@ -74,9 +74,9 @@ gulp.task('build', ['clean', 'styles', 'scripts',], function() {
 
    var buildHtml = gulp.src('app/*.html')
    		.pipe(gulp.dest('dist'));
-   		
+
    var buildImg = gulp.src('app/img/**/*')
-   		.pipe(gulp.dest('dist'));
+   		.pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('clear', function() {

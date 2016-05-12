@@ -16,38 +16,30 @@
 	.bg-sale
 		p
 			font-size: 2.2em !important
-	.wrrap-h1
-		h2
-			font-size: 2.2em !important
-			&::after
-				left: 120px !important
 	.why-thermopanel
 		.block
 			font-size: 14px !important
 		h3
 			font-size: 0.9em !important
-			&::after
-				left: 112px
-				bottom: 178px
 		.photo-termopanel-why
 			margin-top: 41px
 	.content-products
 		.block-products
 			.prod-text
 				left: 95px !important
-		h2
-			font-size: 2.2em !important
 	.we-can-trust
 		.content-block
 			h3
-			font-size: 0.9em !important
+				font-size: 0.9em !important
 	.how-to-find-us
 		.block-content
 			h2
-				margin: 10px
-				font-size: 1.2em
 				&::before
 					top: 60px !important
+	.products .wrraper .content-products h2
+		font-size: 2.2em
+	.why-thermopanel .wrrap-h1 h2
+		font-size: 2.2em
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	/**/
@@ -71,10 +63,6 @@
 	.bg-termopanel
 		.anime-second
 			font-size: 1em !important
-	.wrrap-h1
-		h2
-			&::after
-				left: 165px !important
 	.wrrap-block-why
 		display: flex
 		flex-wrap: wrap
@@ -82,13 +70,10 @@
 			display: none
 		.block
 			width: 50%
-			h3
-				&::after
-					left: 138px
 	.products .wrraper .block-products .product
 		height: 180px !important
-	.we-can-trust .wrrap-trust .content-block
-		margin-top: 0
+	.why-thermopanel .bg-sale a
+		margin: 0 0 60px 0
 	.main-header .main-header-photo
 		display: none
 	.bg-sale
@@ -98,11 +83,17 @@
 		position: relative
 	.main-header p
 		margin: 0 0 20px 0 !important
-	.logo
-		display: inline-block !important
+	.we-can-trust .wrrap-trust .wrrap-h2
+		margin-top: 0
+	.we-can-trust .wrrap-trust .wrrap-bth-trus a
+		margin: 65px 0
+	.products .wrraper .content-products h2
+		margin: 0 0 60px 0
+	.how-to-find-us .wrrap .block-content h2
+		font-size: 1.2em
+		margin: 0
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/
@@ -123,6 +114,10 @@
 		//o-animation: none !important
 		//-ms-animation: none !important
 		//animation: none !important
+	.logo
+		img
+			width: 120px
+
 	.bg-sale p
 		font-size: 1em !important
 		margin: 0 !important
@@ -135,27 +130,26 @@
 		line-height: 34px !important
 		width: 140px !important
 		height: 35px !important
-	.requst-a-coll-p1
-		top: 19px !important
 	.wrapp-head
 		height: 70px !important
 	.coll_us, .phone-num
 		line-height: 72px !important
 	h1
 		font-size: 1.6em !important
+	.social p
+		font-size: 13px !important
+	.contact-block
+		&:first-child
+			font-size: 13px !important
+	.we-can-trust .wrrap-trust .content-block .content-block-fx
+		flex-direction: column
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
 	.wrrap-block-why .block
 		width: 100%
-		h3
-			&::after
-				left: 112px
 	.wrrap-h1 h2
-		font-size: 2em !important
-		&::after
-			left: 12px !important
-			width: 265px !important
+		font-size: 1.6em !important
 	.why-thermopanel .bg-sale a
 		width: 290px !important
 	.we-can-trust .wrrap-trust .wrrap-bth-trus a
@@ -172,28 +166,38 @@
 		order: 3 !important
 	.requst-a-coll-p1 a
 		display: none !important
+	.we-can-trust .wrrap-trust .wrrap-bth-trus a
+		margin: 40px 0 !important
+	.how-to-find-us .wrrap .block-content h2
+		font-size: 0.7em !important
+		&::before
+			top: 35px !important
+	.we-can-trust .wrrap-trust h2
+		font-size: 1.6em !important
+		margin-bottom: 0 !important
+	.content-products h2
+		font-size: 1.6em !important
+		&::after
+			display: none !important
+	body .coll_us, body .phone-num
+		text-align: right
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
-
-
 /*==========  Mobile First Method  ==========*/
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px)
 	/**/
 
-
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
 	/**/
-
-
+	
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px)
 	/**/
-
-
+	
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
 	/**/
