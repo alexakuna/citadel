@@ -26,6 +26,10 @@ $("a[href=callback]").click(function() {
 	$("#callback .formname").val($(this).data("form"));
 });
 
+if(window.matchMedia('(max-width: 480px)').matches) {
+
+	//$('h1').removeClass('');
+};
 
 	//SVG Fallback
 	if(!Modernizr.svg) {
@@ -35,7 +39,6 @@ $("a[href=callback]").click(function() {
 	};
 
 	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
 	$(".callback").submit(function() { //Change
 		var th = $(this);
 		$.ajax({

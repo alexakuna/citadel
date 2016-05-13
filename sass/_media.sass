@@ -32,17 +32,31 @@
 			h3
 				font-size: 0.9em !important
 	.how-to-find-us
-		.block-content
-			h2
-				&::before
-					top: 60px !important
+		font-size: 1.7em
+	.how-to-find-us .wrrap .block-content h2
+		margin: 10px 0 !important
+		&::after
+			top: 60px
 	.products .wrraper .content-products h2
 		font-size: 2.2em
 	.why-thermopanel .wrrap-h1 h2
 		font-size: 2.2em
+	.we-can-trust .wrrap-trust .wrrap-h2
+		margin-top: 0
+	.we-can-trust .wrrap-trust .wrrap-bth-trus a
+		margin: 50px 0
+
+	.how-to-find-us .wrrap .block-content .wrrap-for-map
+    position: absolute;
+    width: 579px
+    height: 435px
+    bottom: 48px
+    left: 192px
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.products .wrap-block-products
+		margin-bottom: 50px
 	.coll_us
 		span
 			display: none !important
@@ -56,6 +70,8 @@
 			font-size: 0.8em !important
 	h1
 		font-size: 2em !important
+	body .main-header h1
+		margin: 30px 0
 	.bg-sale
 		p
 			font-size: 1.4em !important
@@ -74,27 +90,40 @@
 		height: 180px !important
 	.why-thermopanel .bg-sale a
 		margin: 0 0 60px 0
-	.main-header .main-header-photo
-		display: none
 	.bg-sale
 		position: relative !important
 	.main-header .bg-termopanel
 		bottom: 0 !important
 		position: relative
 	.main-header p
-		margin: 0 0 20px 0 !important
+		margin: 0 0 30px 0 !important
 	.we-can-trust .wrrap-trust .wrrap-h2
 		margin-top: 0
 	.we-can-trust .wrrap-trust .wrrap-bth-trus a
 		margin: 65px 0
 	.products .wrraper .content-products h2
-		margin: 0 0 60px 0
+		margin: 10px 0
 	.how-to-find-us .wrrap .block-content h2
 		font-size: 1.2em
 		margin: 0
+		&::after
+			top: 45px
+	.products .wrraper .content-products .wrrap-photo-notebook
+		top: -98px
+	.logo
+		img
+			width: 160px
+	.how-to-find-us .wrrap .block-content .wrrap-for-map
+    position: absolute;
+    width: 447px;
+    height: 335px;
+    bottom: 38px;
+    left: 149px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+
 	/*Disable Animation on Mobile Devices*/
+	
 	.animated
 		/*CSS transitions*/
 		//-o-transition-property: none !important
@@ -103,7 +132,7 @@
 		//-webkit-transition-property: none !important
 		//transition-property: none !important
 		/*CSS transforms*/
-		//-transform: none !important
+		//-o-transform: none !important
 		//-moz-transform: none !important
 		//-ms-transform: none !important
 		//-webkit-transform: none !important
@@ -111,13 +140,16 @@
 		/*CSS animations*/
 		//-webkit-animation: none !important
 		//-moz-animation: none !important
-		//o-animation: none !important
+		//-o-animation: none !important
 		//-ms-animation: none !important
 		//animation: none !important
+	.products .wrap-block-products
+		margin-bottom: 50px
+	.content-products h2
+		margin: 10px 0 !important
 	.logo
 		img
 			width: 120px
-
 	.bg-sale p
 		font-size: 1em !important
 		margin: 0 !important
@@ -143,6 +175,13 @@
 			font-size: 13px !important
 	.we-can-trust .wrrap-trust .content-block .content-block-fx
 		flex-direction: column
+	.how-to-find-us .wrrap .block-content .wrrap-for-map
+    position: absolute
+    width: 357px
+    height: 268px
+    bottom: 30px
+    left: 119px
+	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
@@ -168,8 +207,6 @@
 		display: none !important
 	.we-can-trust .wrrap-trust .wrrap-bth-trus a
 		margin: 40px 0 !important
-	.how-to-find-us .wrrap .block-content h2
-		font-size: 0.7em !important
 		&::before
 			top: 35px !important
 	.we-can-trust .wrrap-trust h2
@@ -177,10 +214,34 @@
 		margin-bottom: 0 !important
 	.content-products h2
 		font-size: 1.6em !important
+		margin: 10px 0 !important
 		&::after
 			display: none !important
 	body .coll_us, body .phone-num
 		text-align: right
+	.text-call-us
+		font-size: 0.7em
+	body .phone-num
+		margin-left: 0
+	.wrrap-block-why
+		flex-direction: column
+	.products .wrap-block-products
+		margin-bottom: 50px
+	.block-content
+		h2
+			&::after
+				top: 40px
+	.how-to-find-us .wrrap .block-content h2
+		&::after
+			top: 35
+	.photo-tablet
+		display: none
+	.how-to-find-us .wrrap .block-content .wrrap-for-map
+    position: relative
+    width: 100%
+    height: 260px
+    bottom: 0
+    left: 0
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

@@ -22,7 +22,7 @@ body
 		color: $color-notify
 		display: inline-block
 		line-height: 120px
-		text-align: center
+		text-align: right
 		span
 			width: 10px
 			height: 10px
@@ -30,7 +30,7 @@ body
 			border-radius: 50%
 			display: inline-block
 			margin-left: 10px
-			
+		.text-call-us
 	.phone-num
 		@extend .coll_us
 		color: $cr-nfy-p2
@@ -125,15 +125,19 @@ body
 				bottom: 0
 				left: 0
 				background-position: 50% 50%
+				background-repeat: no-repeat
+				background-size: cover
 		h1
 			margin: 0
 			margin-top: 15px
 			font-size: 3em
 			text-shadow: 0 0 1px $cr-nfy-p2
+			position: relative
 		p
 			margin: 0
 			font-size: 1.3em
 			color: $cr-nfy-p2
+			position: relative
 		span
 			color: $accent-color
 		.main-header-photo

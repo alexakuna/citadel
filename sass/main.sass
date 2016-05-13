@@ -31,8 +31,12 @@ body textarea:required:valid
 	color: #666
 h1, h2, h3, h4
 	color: $cr-nfy-p2
+h2
+	display: inline-block
+	//margin: 0
 body
 	overflow-x: hidden
+	font-family: "Open-Sans", sans-serif
 //Custom Styles Here
 .success
 	position: absolute
@@ -51,6 +55,7 @@ body
 	background: lighten(#e8e6d8, 5%)
 
 .why-thermopanel
+	border-top: 2px solid $cr-nfy-p2
 	background: url(/img/termopanel.jpg) no-repeat 50% 50%
 	background-size: cover
 	text-align: center
@@ -67,17 +72,18 @@ body
 				left: 0
 				bottom: 0
 	.wrrap-block-why
+		.wrap-h3
+			position: relative
 		.block
 			height: 200px
 			text-align: center
 			line-height: 30px
 			padding: 0 50px
-			overflow: hidden
-			animation-delay: 0.3s	
 			h3
 				position: relative
 				text-align: center
 				text-transform: uppercase
+				display: inline-block
 				&::after
 					background-color: $accent-color
 					content: ''
@@ -115,6 +121,8 @@ body
 				color: $accent-color
 				border: 1px solid $accent-color
 .products
+	border-top: 2px solid $cr-nfy-p2
+	border-bottom: 2px solid $cr-nfy-p2
 	.wrraper
 		position: relative
 		text-align: center
@@ -122,9 +130,10 @@ body
 			text-align: center
 			.wrrap-photo-notebook
 				position: relative
+				top: -160px
 				img
 					position: absolute
-					top: -50px
+					top: 0
 					right: 0
 					left: 0
 					bottom: 0
@@ -159,46 +168,59 @@ body
 			bottom: 0
 			left: 0
 			z-index: 1
-		.block-products
-			position: relative
-			z-index: 20
-			width: 100%
-			display: flex
-			&:last-child
-				margin-bottom: 125px
-			.product
+	.wrap-block-products
+		margin-bottom: 150px
+		.photo-item
+			span
+				font-size: 20px
+				color: #fff
+				opacity: 0
+				top: 20px
+				transition: .3s ease
+				z-index: 39
 				position: relative
-				padding: 0
-				width: 25%
-				height: 200px
-				background: lighten($cr-nfy-p2, 10%)
-				text-decoration: none
-				color: $cr-nfy-p2
-				border: 1px solid lighten($cr-nfy-p2, 60%)
-				.prod-text
-					position: absolute
-					top: 20px
-					left: 120px
-					color: #fff
-				&:hover .proeye
-					opacity: 0.5
-					left: 0
-				.proeye
-					background: #000
-					width: 100%
-					height: 100%
-					font-size: 1.5em
-					opacity: 0
-					position: absolute
-					left: -9999em
-					color: #fff
-					outline: 2px solid #fff
-					transition: .3s opacity
-					display: flex
-					align-items: center
-					justify-content: center
+			.fa
+				font-size: 26px
+				color: #fff
+				position: absolute
+				top: 50%
+				left: 50%
+				margin-top: -10px
+				margin-left: -10px
+				transition: .3s all ease
+				opacity: 0
+				z-index: 35
+			position: relative
+			background: url(/img/tinified/17-min.jpg) no-repeat
+			background-size: cover
+			min-height: 180px
+			z-index: 20
+			outline: 3px solid $cr-nfy-p2
+			transition: 0.3s
+			cursor: pointer
+			&::after
+				position: absolute
+				content: ''
+				width: 100%
+				height: 100%
+				top: 0
+				left: 0
+				background-color: lighten($cr-nfy-p2, 10%)
+				opacity: 0
+				transition: .3s all ease
+		.photo-item
+			&:hover
+				.fa
+					opacity: .4
+				&::after
+					opacity: .6
+					outline: 1px solid #fff
+		.photo-item
+			&:hover span
+				opacity: .6
 
 .we-can-trust
+	border-bottom: 2px solid $cr-nfy-p2
 	font-family: "Open-Sans", sans-serif
 	.wrrap-trust
 		position: relative
@@ -218,6 +240,7 @@ body
 			opacity: .2
 			background: url(/img/photo-trust.jpg) no-repeat 50% 50%
 			background-size: cover
+			z-index: 0
 		.content-block
 			text-align: center
 			display: flex
@@ -282,56 +305,79 @@ body
 			right: 0
 			bottom: 0
 		.block-content
+			position: relative
 			h2
 				color: #fff
 				position: relative
 				z-index: 11
 				display: inline-block
-				&::before
+				&::after
 					content: ''
 					position: absolute
-					top: 90px
+					top: 70px
 					left: 0
-					right: 0
-					bottom: 0
 					height: 2px
 					width: 100%
 					background: #fff
 			img
 				z-index: 10
 				position: relative
-			iframe
-				position: absolute
-				z-index: 11
-				bottom: 47px
-				left: 664px
+			.wrrap-for-map
+				position: absolute;
+				width: 692px
+				height: 516px
+				bottom: 58px
+				left: 234px
+				iframe
+					position: relative;
+					z-index: 11;
+					bottom: 0;
+					width: 100%;
+					left: 0;
+					height: 100%;
+					right: 0;
+					top: 0;
 footer
 	background-color: #141e1f
 	text-align: center
 	color: #fff
+	border-top: 2px solid #fff
 	.wrrap-contact-block
 		display: flex
 		justify-content: space-around
 	.social
+		border-left: 2px solid #fff
+		border-right: 2px solid #fff
 		ul
 			text-align: center
 			li
 				display: inline-block
 				font-size: 32px
 				margin-right: 10px
-				
 				a:hover
-					color: darken(#fff, 20%)
+					color: darken(#fff, 30%)
+
 		img
 			margin-top: 20px
 			display: inline-block
-	.contact-block
+	.contact-block:first-child
 		border-left: 2px solid #fff
+	.contact-block	
 		color: #fff
 		text-align: left
 		margin-top: 20px
 		h3
 			color: #fff
+			position: relative
+			display: inline-block
+			&::after
+				position: absolute
+				content: ''
+				width: 100%
+				height: 1px
+				top: 25px
+				left: 0
+				background-color: #FFF
 		ul
 
 			padding: 0 0 0 5px
@@ -340,6 +386,8 @@ footer
 				a
 					color: #fff
 	.contacts
+		text-align: right
+		border-right: 2px solid #fff
 		li
 			font-size: 12px	
 
