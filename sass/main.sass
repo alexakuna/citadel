@@ -6,6 +6,8 @@
 @import "app/libs/magnific-popup/dist/magnific-popup"
 @import "app/libs/font-awesome/scss/font-awesome"
 @import "app/css/magnific-custom"
+@import "app/libs/slick/slick.scss"
+@import "app/libs/slick/slick-theme.scss"
 
 *::-webkit-input-placeholder
 	color: #666
@@ -38,6 +40,7 @@ body
 	overflow-x: hidden
 	font-family: "Open-Sans", sans-serif
 //Custom Styles Here
+
 .success
 	position: absolute
 	visibility: hidden
@@ -168,17 +171,94 @@ body
 			bottom: 0
 			left: 0
 			z-index: 1
+			background-repeat: no-repeat
+			background-size: contain
 	.wrap-block-products
 		margin-bottom: 150px
+		.row
+			margin: 0 !important
+		.our-work2
+			display: none
+		.wrap-look-more
+			position: relative
+			z-index: 889
+			margin-top: 50px
+			.look-more
+				text-decoration: none
+				color:#ffffff
+				transition: all .2s ease-out
+				&:hover
+					color: darken(#ffffff, 20%)
+		.wrap-desc-product
+			z-index: 111
+			text-align: left
+			border: 1px solid #ffffff
+		.photo-galery-2
+			.after, .before, .after-1, .before-1
+				background: #fff
+			.after, .before img,
+			.after-1, .before-1 img
+				padding: 1px
+			.slick-dots
+				left: 50%
+				bottom: -40px
+				margin-left: 16px
+				z-index: 8888
+		h3, p
+			color: #ffffff
+			margin: 0
+			margin-bottom: 5px
+			line-height: 1.5em
+
+		.slider-1 > a
+			display: none
+			&:nth-child(3)
+				display: block
+				width: 100%
+		.slick-next
+			background: url(../img/right-arrow.png) no-repeat 50% 50% #cccccc
+			width: 25px
+			height: 25px
+			z-index: 901
+		.slick-prev
+			background: url(../img/left-arrow.png) no-repeat 50% 50% #cccccc
+			width: 25px
+			height: 25px
+			z-index: 901
+		.slick-next::before,
+		.slick-prev::before
+			content: ''
+		.slick-dots li button:before
+			font-size: 12px
+			background: #1b1b1b
+			border-radius: 50%
+			content: ''
+		.slick-dots li
+			margin: 0 10px
 		.photo-item
+			position: relative
+			background: #cccccc
+			z-index: 20
+			transition: 0.3s
+			cursor: pointer
+			padding: 2px
+			display: block
+			.galery
+				position: absolute
+				top: 60%
+				left: 50%
+				margin-left: -36px
+			img
+				width: 100%
 			span
 				font-size: 20px
 				color: #fff
-				opacity: 0
-				top: 20px
+				opacity: 1
+				top: 150px
+				left: 90px
 				transition: .3s ease
 				z-index: 39
-				position: relative
+				position: absolute
 			.fa
 				font-size: 26px
 				color: #fff
@@ -188,16 +268,8 @@ body
 				margin-top: -10px
 				margin-left: -10px
 				transition: .3s all ease
-				opacity: 0
+				opacity: 1
 				z-index: 35
-			position: relative
-			background: url(/img/tinified/17-min.jpg) no-repeat
-			background-size: cover
-			min-height: 180px
-			z-index: 20
-			outline: 3px solid $cr-nfy-p2
-			transition: 0.3s
-			cursor: pointer
 			&::after
 				position: absolute
 				content: ''
@@ -205,8 +277,8 @@ body
 				height: 100%
 				top: 0
 				left: 0
-				background-color: lighten($cr-nfy-p2, 10%)
-				opacity: 0
+				background-color: lighten(#ffffff, 10%)
+				opacity: 0.3
 				transition: .3s all ease
 		.photo-item
 			&:hover
@@ -222,6 +294,16 @@ body
 .we-can-trust
 	border-bottom: 2px solid $cr-nfy-p2
 	font-family: "Open-Sans", sans-serif
+	.service
+		padding: 0 10px
+		margin: auto
+		margin-top: 30px
+		font-weight: 600
+	.docs
+		position: relative
+		margin-top: 30px
+		outline: none
+		z-index: 50
 	.wrrap-trust
 		position: relative
 		.wrrap-h2
@@ -230,6 +312,15 @@ body
 			h2
 				font-size: 2.4em
 				display: inline-block
+				position: relative
+				&::after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					height: 3px
+					background-color: #9a3645
 		&::before
 			content: ''
 			position: absolute
@@ -252,7 +343,18 @@ body
 				justify-content: center
 				.block-trust
 					padding: 0 50px
-					text-align: center
+					text-align: left
+					h3
+						position: relative
+						display: inline-block
+						&::after
+							content: ''
+							position: absolute
+							bottom: 0
+							left: 0
+							width: 100%
+							height: 3px
+							background-color: $accent-color
 		
 		.wrrap-bth-trus
 			text-align: center
@@ -390,8 +492,6 @@ footer
 		border-right: 2px solid #fff
 		li
 			font-size: 12px	
-
-
 
 
 //ALWAYS END

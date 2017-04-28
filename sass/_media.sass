@@ -55,6 +55,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.slick-dots
+		display: none !important
 	.products .wrap-block-products
 		margin-bottom: 50px
 	.coll_us
@@ -114,13 +116,17 @@
 		img
 			width: 160px
 	.how-to-find-us .wrrap .block-content .wrrap-for-map
-    position: absolute;
-    width: 447px;
-    height: 335px;
-    bottom: 38px;
-    left: 149px
+	    position: absolute;
+	    width: 447px;
+	    height: 335px;
+	    bottom: 38px;
+	    left: 149px
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
+	.slick-prev
+		left: 10px
+	.slick-next
+		right: 10px
 
 	/*Disable Animation on Mobile Devices*/
 	
@@ -175,20 +181,24 @@
 			font-size: 13px !important
 	.we-can-trust .wrrap-trust .content-block .content-block-fx
 		flex-direction: column
-	.how-to-find-us .wrrap .block-content .wrrap-for-map
-    position: absolute
-    width: 357px
-    height: 268px
-    bottom: 30px
-    left: 119px
+	// .how-to-find-us .wrrap .block-content .wrrap-for-map
+	//     position: absolute
+	//     width: 357px
+	//     height: 268px
+	//     bottom: 30px
+	//     left: 119px
 	
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
+	.slick-prev
+		display: none !important
+	.slick-next
+		display: none !important
 	.wrrap-block-why .block
 		width: 100%
 	.wrrap-h1 h2
-		font-size: 1.6em !important
+		font-size: 1em !important
 	.why-thermopanel .bg-sale a
 		width: 290px !important
 	.we-can-trust .wrrap-trust .wrrap-bth-trus a
@@ -237,11 +247,11 @@
 	.photo-tablet
 		display: none
 	.how-to-find-us .wrrap .block-content .wrrap-for-map
-    position: relative
-    width: 100%
-    height: 260px
-    bottom: 0
-    left: 0
+	    position: relative
+	    width: 100%
+	    height: 260px
+	    bottom: 0
+	    left: 0
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/

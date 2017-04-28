@@ -6,7 +6,7 @@ var gulp         = require('gulp'),
 		browserSync  = require('browser-sync').create(),
 		concat       = require('gulp-concat'),
 		uglify       = require('gulp-uglify')
-		//imagemin 		= require('gulp-imagemin'),
+		imagemin 		= require('gulp-imagemin'),
 		//pngquant 		= require('imagemin-pngquant'),
 		del      		= require('del'),
 		//cache    		= require('gulp-cache');
@@ -40,7 +40,8 @@ gulp.task('scripts', function() {
 		'./app/libs/waypoints/waypoints.min.js',
 		'./app/libs/animate/animate-css.js',
 		'./app/libs/plugins-scroll/plugins-scroll.js',
-		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+		'./app/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'./app/libs/slick/slick.js'
 
 		])
 		.pipe(concat('libs.js'))
